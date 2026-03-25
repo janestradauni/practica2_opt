@@ -1,0 +1,4 @@
+solve;
+display total_flow;
+display x;
+display y;

@@ -1,0 +1,7 @@
+model practica2_b.mod;
+data practica2.dat;
+option solver cplex;
+solve;
+display total_flow;
+display x;
+display y;

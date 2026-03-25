@@ -1,0 +1,7 @@
+model practica2_a.mod;
+data practica2.dat;
+option solver gurobi;
+solve;
+display total_flow;
+display x;
+display y;
