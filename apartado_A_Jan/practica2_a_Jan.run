@@ -1,6 +1,6 @@
 reset;
-model practica2_a.mod;
-data practica2_a.dat;
+model practica2_a_Jan.mod;
+data practica2_a_Jan.dat;
 option solver gurobi;
 solve;
 display total_flow;

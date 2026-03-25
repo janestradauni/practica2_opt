@@ -1,0 +1,7 @@
+model practica2_a.mod;
+data practica2.dat;
+option solver gurobi;
+solve;
+display total_flow;
+display {i in INTERSECTIONS : x[i] = 1} x[i];
+display {p in PATHS : y[p] = 1} y[p];
