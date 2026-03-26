@@ -1,4 +1,8 @@
 # Generated from OPT25-26_Datos practica 2.txt
+# intersections: 457
+# paths: 42
+# path_intersections: 542
+# neighbors: 1284
 
 set INTERSECTIONS :=
   73701 73702 73703 73704 73705 73706 73707 73708 73709 73710 73711 73712

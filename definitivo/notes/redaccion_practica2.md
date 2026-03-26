@@ -7,7 +7,7 @@ La version definitiva se ha agrupado en una unica carpeta llamada `definitivo/` 
 La carpeta se divide en cuatro bloques:
 
 - `ampl/`: modelos y datos finales en AMPL.
-- `tools/`: parser Python, generador del `.dat` y verificador de nodos `FIXED`.
+- `tools/`: dos scripts Python sencillos para generar el `.dat` y comprobar los nodos `FIXED`.
 - `datos_crudos/`: copia del fichero original entregado por la asignatura.
 - `notes/`: notas de redaccion para la memoria final.
 
@@ -90,22 +90,16 @@ Se utiliza exactamente el mismo esquema, anadiendo `NEIGHBORS` y la restriccion 
 
 `x[i] + x[j] <= 1`
 
-## 5. Parser Python y generacion del .dat
+## 5. Scripts Python y generacion del .dat
 
-El fichero crudo proporcionado por la practica no esta en formato AMPL, por lo que se ha desarrollado un parser Python interno.
+El fichero crudo proporcionado por la practica no esta en formato AMPL, por lo que se han usado dos scripts Python muy simples.
 
-El parser:
+El primero, `tools/build_ampl_data.py`, recorre el fichero original, detecta cada seccion por su cabecera y va guardando las lineas hasta encontrar la siguiente seccion. Con esa informacion genera el fichero final `practica2.dat`.
 
-- lee las secciones del fichero crudo,
-- parsea intersecciones, caminos, flujos y relaciones camino-interseccion,
-- parsea tambien la vecindad entre intersecciones,
-- valida consistencia de referencias,
-- detecta duplicados,
-- y genera el fichero final `practica2.dat`.
+El segundo, `tools/verify_fixed_intersections.py`, comprueba de forma directa que no haya nodos `FIXED` vecinos entre si dentro de `intersection_neighborhood`, para descartar que el apartado B sea infactible de partida por esa razon.
 
 Los scripts usados son:
 
-- `tools/practica2_data.py`
 - `tools/build_ampl_data.py`
 - `tools/verify_fixed_intersections.py`
 
@@ -118,13 +112,6 @@ Antes de usar los modelos en AMPL se han comprobado varios aspectos:
 - 457 intersecciones
 - 42 caminos
 - 542 pares en `PATH_INTERSECTIONS`
-
-### Integridad referencial
-
-- todos los caminos de `PATHS` tienen flujo,
-- todos los caminos de `PATHS` aparecen en `PATH_INTERSECTIONS`,
-- no hay intersecciones inexistentes en `FIXED` ni en `PROHIBITED`,
-- no hay nodos prohibidos activados por error en los datos.
 
 ### Vecindad para el apartado B
 
@@ -152,7 +139,7 @@ Esto es preferible a mostrar todas las variables con valor 0 y 1, porque facilit
 
 Se han combinado las mejores partes de ambas versiones previas:
 
-- del trabajo propio: parser Python, generacion automatica del `.dat`, verificaciones y estructura de datos limpia;
+- del trabajo propio: generacion automatica del `.dat` a partir del fichero crudo y comprobacion simple de los nodos `FIXED`;
 - de la version alternativa: salida de AMPL mas limpia y una formulacion del conjunto `PATH_INTERSECTIONS` especialmente clara en las restricciones.
 
 Ademas, se ha mantenido la condicion estricta:
