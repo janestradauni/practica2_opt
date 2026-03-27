@@ -1,0 +1,27 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Descripción del problema}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Estructura de la entrega}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Formulación matemática}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Apartado A}{3}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Conjuntos}{3}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Parámetros}{3}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Variables de decisión}{3}{subsubsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}Función objetivo}{3}{subsubsection.2.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.5}Restricciones}{4}{subsubsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.2}Apartado B}{4}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Conjunto adicional}{4}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Restricción adicional}{4}{subsubsection.2.2.2}%
+\contentsline {section}{\numberline {3}Scripts de Python}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Uso de los scripts}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Generación del fichero \texttt {.dat}}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Verificación de nodos fijos}{5}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Implementación en AMPL}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Modelo del apartado A}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Modelo del apartado B}{6}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Archivos de ejecución}{7}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Resultados}{7}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Resumen general}{7}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Sensores seleccionados}{8}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Interpretación de resultados}{8}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Discusión de la implementación y conclusiones}{9}{section.6}%
